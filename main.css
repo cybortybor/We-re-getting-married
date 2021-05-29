@@ -1,0 +1,600 @@
+/* ==== A SIMPLE CSS RESET FROM ERIC MEYER ==== */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+h1,h2,h3,h4,h5,h6,hgroup,
+ul,ol,dd,
+p,figure,
+pre,table,fieldset,hr,
+img,
+.main-header, .section {
+    margin-bottom: 1rem;
+}
+
+/* ==== BASE STYLES ==== */
+
+* {
+  box-sizing: border-box;
+}
+a {
+  color:#bd806e;
+  text-decoration: none;
+}
+
+a:hover {
+  color:#eda087;
+}
+/* === Header STYLES === */
+
+body {
+  background: url('https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-background.png')
+  }
+
+.cover {
+  background: url('https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-cover.jpg') no-repeat center center;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  color: hsla(0,0%,100%,.9);
+  text-align: center;
+  display: table;
+}
+
+.wrapper {
+  display: table-cell;
+  vertical-align: middle;
+  padding: .625rem;
+}
+
+.name-card {
+  background-color: rgba(0,0,0,.5);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  vertical-align: center;
+  padding: 1rem;
+}
+
+header h2 {
+  font: 1.25rem 'Libre Baskerville', serif;
+  letter-spacing: 0.2rem;
+  color: white;
+}
+
+header h2::after {
+    display: block;
+    content: "";
+    border-top: .1rem solid white;
+    width: 13.5rem;
+    margin: 0 auto;
+    transform: translateY(0.9rem);
+}
+
+.headline {
+  font-family: 'Great Vibes', cursive;
+  color: hsla(42, 40%, 68%, 1);
+  font-size: 7rem;
+  margin: 2.6rem 0rem 1.1875rem 0.3rem;
+}
+
+.name-card h3 {
+  font: 1.375rem 'Libre Baskerville', serif;
+  letter-spacing: 0.1rem;
+  color: white;
+}
+
+.date::before,
+.date::after {
+    display: inline-block;
+    content: "";
+    border-top: .1rem solid white;
+    width: 1.5rem;
+    margin: 0 0.4rem;
+    transform: translateY(-0.3rem);
+}
+
+/* ==== Location STYLES ==== */
+
+section.groupe {
+  width: 95%;
+  margin: 2rem auto;
+  padding: 0.5rem 1rem;
+}
+.groupe h2 {
+  font: 3rem 'Great Vibes', cursive;
+  text-align: center;
+  margin: 0 0 1.5rem;
+  color: #444349;
+}
+
+.event h3 {
+  font: bold 1.5rem 'Libre Baskerville', serif;
+  color: #444349;
+  text-align: center;
+  margin: 0 0 1.5rem;
+}
+
+img {
+  width: 7.5rem;
+  height: 7.5rem;
+  margin: 0 0 1.5rem;
+}
+
+.event p {
+  text-align: center;
+  font: 1.1875rem 'Mulish', sans-serif;
+  margin-top: 1rem;
+  line-height: 150%;
+  color: #444349;
+}
+/* Container for flexboxes */
+
+.location {
+  display: flex;
+}
+
+/* Create four equal columns */
+
+.event {
+  float: left;
+  width: 30%;
+  margin: 0.5rem auto;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+
+/* ==== Program STYLES ==== */
+
+section.programs {
+  background: hsla(100,0%,0%,.6);
+  color: hsla(42, 40%, 68%, 1);
+  text-align: center;
+  width: 100%;
+  margin: 1.5rem 0rem;
+  padding: 0.5rem 1rem;
+}
+
+.program {
+  width: 30%;
+  margin: 0 auto;
+}
+
+.program h2 {
+  font: 3rem 'Great Vibes', cursive;
+  padding: 1.7rem 0 1rem;
+}
+.program p {
+  text-align: left;
+  font:  italic 1.1875rem 'Mulish', sans-serif;
+}
+
+li {
+  text-align: left;
+  font: 1.125rem 'Mulish', sans-serif;
+  margin: 0.3rem
+}
+
+/* ==== GIFT STYLES ==== */
+
+section.gifts {
+  width: 95%;
+  margin: 1.5rem auto;
+  padding: .5rem;
+  text-align: center;
+}
+
+.gifts h2 {
+  font: 3rem 'Great Vibes', cursive;
+  color: #444349;
+  margin: 0 0 1.5rem;
+}
+
+.gifts p {
+  font: 1.125rem 'Libre Baskerville', serif;
+  color: #444349;
+  text-align: center;
+  margin: 0 0 1.5rem
+}
+
+/* ==== Q & A STYLE ==== */
+
+section.qa-group {
+  background: hsla(100,0%,0%,.6);
+  color: hsla(42, 40%, 68%, 1);
+  padding: 1.5rem 1rem;
+  margin: 1.5rem 0;
+  width: 100%;
+  text-align: center;
+
+}
+
+.questions-answers {
+  display: inline-block;
+  width: 29%;
+  margin: 1.5rem;
+  text-align: left;
+  padding: 1rem;
+  vertical-align: top;
+}
+
+.qa-group h2 {
+  font: 3rem 'Great Vibes', cursive;
+  text-align: center;
+  margin: 1rem auto;
+}
+
+.qa-group h3 {
+  font: 1.5625rem 'Libre Baskerville', serif;
+  margin: 0 0 1.5rem;
+  text-align: left;
+}
+
+
+ p.question {
+  font: 700 1.125rem 'Mulish', sans-serif;
+  line-height: 1.6;
+}
+
+ p.answer {
+  text-align: left;
+  font-family: 'Mulish', sans-serif;
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+/* === CONTACT STYLE ===*/
+
+section.contact {
+  width: 100%;
+  margin: 1.5rem auto;
+  padding: 0.5rem 1rem;
+  text-align: center;
+}
+.contact h2 {
+  font: 3rem 'Great Vibes', cursive;
+  color: #444349;
+  margin: 0 0 1.5rem;
+}
+.contact p {
+  font: 1.125rem 'Libre Baskerville', serif;
+  color: #444349;
+  text-align: center;
+  margin: 0 0 1.5rem
+}
+
+/* === FOOTER STYLE ===*/
+
+footer{
+  height: 10vh;
+  width: 100%;
+  background: #606060;
+  text-align: center;
+  display: table;
+}
+
+.icons {
+  color: white;
+  padding: 0.5rem 1rem;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.icons p {
+  font: 0.875rem 'Mulish', sans-serif;
+}
+
+/* On screens that are 768px wide or less, make the columns stack on top of each other instead of next to each other */
+
+@media (max-width: 768px) {
+
+  .location {
+    flex-direction: column;
+}
+
+  .event {
+    width: 100%;
+}
+
+  /* === Header STYLES === */
+
+  .event::after {
+    display: block;
+    content: "";
+    border-top: .2rem solid #444349;
+    width: 25vw;
+    margin: 1.5rem auto;
+    transform: translateY(0rem);
+}
+
+  .name-card {
+    background-color: rgba(0,0,0,.5);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100vw;
+    vertical-align: center;
+    padding: 0.8rem;
+}
+  .headline {
+    font-family: 'Great Vibes', cursive;
+    color: hsla(42, 40%, 68%, 1);
+    font-size: 3.5rem;
+    margin: 2rem 0rem 1rem 0.2rem;
+}
+  header h2 {
+    font: 1.25rem 'Libre Baskerville', serif;
+    letter-spacing: 0.2rem;
+    color: white;
+}
+
+  .cover {
+    background: url('https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-cover.jpg');
+    background-size: cover cover;
+    background-position: 71%;
+}
+
+/* === PROGRAM STYLES ===*/
+
+  section.programs {
+    background: hsla(100,0%,0%,.6);
+    color: hsla(42, 40%, 68%, 1);
+    width: 100%;
+}
+  .program {
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* ==== GIFT STYLES ==== */
+
+  section.gifts {
+    text-align: center;
+    width: 95%;
+    margin: 0 auto;
+}
+
+/* ==== Q & A STYLES ==== */
+
+ .qa-group h2 {
+    font: 3rem 'Great Vibes', cursive;
+    text-align: center;
+    margin: 1.5rem auto;
+}
+
+ .qa-group h3 {
+    font: 1.5625rem 'Libre Baskerville', serif;
+    text-align: center;
+}
+
+ .questions-answers::after {
+    display: block;
+    content: "";
+    border-top: .3rem solid hsla(42, 40%, 68%, 1);
+    width: 50vw;
+    margin: 1.5rem auto;
+    transform: translateY(0.1rem);
+  }
+
+ section.qa-group {
+    background: hsla(100,0%,0%,.6);
+    color: hsla(42, 40%, 68%, 1);
+    padding: 0.5rem 1rem;
+    margin: 1.5rem auto;
+    display: inline-block;
+    width: 100%;
+    flex-direction: column;
+}
+
+ .questions-answers {
+   clear:both;
+   width: 100%;
+   text-align: left;
+   margin: 0;
+   padding: 0;
+}
+
+  /* === CONTACT STYLE ===*/
+
+  section.contact {
+    width: 95%;
+    margin: 1.5rem auto ;
+    padding: .5rem 1rem;
+    text-align: center;
+    display: block;
+}
+  .contact h2 {
+    font: 3rem 'Great Vibes', cursive;
+    color: #444349;
+    margin: 0 0 1.5rem;
+}
+  .contact p {
+    font: 1.125rem 'Libre Baskerville', serif;
+    color: #444349;
+    text-align: center;
+    margin: 0 0 1.5rem;
+  }
+     }
+
+  /* On screens that are 768px wide or less, make the columns stack on top of each other instead of next to each other */
+
+  @media (min-width: 768px) {
+    header h2 {
+  text-transform: uppercase;
+
+}
+  }
+
+/* Landscape */
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 800px)
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) {
+
+    /* === Header STYLES === */
+
+  .event::after {
+    display: block;
+    content: "";
+    border-top: .2rem solid #444349;
+    width: 25vw;
+    margin: 1.5rem auto;
+    transform: translateY(0rem);
+}
+
+  .name-card {
+    background-color: rgba(0,0,0,.5);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100vw;
+    vertical-align: center;
+    padding: 0.8rem;
+}
+  .headline {
+    font-family: 'Great Vibes', cursive;
+    color: hsla(42, 40%, 68%, 1);
+    font-size: 3.5rem;
+    margin: 2rem 0rem 1rem 0.2rem;
+}
+  header h2 {
+    font: 1.25rem 'Libre Baskerville', serif;
+    letter-spacing: 0.2rem;
+    color: white;
+}
+
+   .cover {
+    background: url('https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-cover.jpg');
+    background-size: cover cover;
+    background-position: 71%;
+}
+  section.qa-group {
+    background: hsla(100,0%,0%,.6);
+    color: hsla(42, 40%, 68%, 1);
+    padding: 1.5rem 0.5rem;
+    margin: 1.5rem 0;
+    width: 100%;
+    text-align: center;
+
+}
+
+  .questions-answers {
+    display: inline-block;
+    width: 25%;
+    margin: 1.rem;
+    text-align: left;
+    padding: 0rem;
+    vertical-align: top;
+}
+
+}
+
+/* Landscape */
+@media only screen
+  and (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (orientation: landscape)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+    section.qa-group {
+    background: hsla(100,0%,0%,.6);
+    color: hsla(42, 40%, 68%, 1);
+    padding: 1.5rem 0.5rem;
+    margin: 1.5rem 0;
+    width: 100%;
+    text-align: center;
+
+}
+  .questions-answers {
+    display: inline-block;
+    width: 25%;
+    margin: 1.rem;
+    text-align: left;
+    padding: 0rem;
+    vertical-align: top;
+}.name-card {
+    background-color: rgba(0,0,0,.5);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100vw;
+    vertical-align: center;
+    padding: 0.8rem;
+}
+  .headline {
+    font-family: 'Great Vibes', cursive;
+    color: hsla(42, 40%, 68%, 1);
+    font-size: 3.5rem;
+    margin: 2rem 0rem 1rem 0.2rem;
+}
+  header h2 {
+    font: 1.25rem 'Libre Baskerville', serif;
+    letter-spacing: 0.2rem;
+    color: white;
+}
+
+   .cover {
+    background: url('https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-cover.jpg');
+    background-size: cover cover;
+    background-position: 71%;
+}
+
+/* === PROGRAM STYLES ===*/
+
+  section.programs {
+    background: hsla(100,0%,0%,.6);
+    color: hsla(42, 40%, 68%, 1);
+    width: 100%;
+}
+  .program {
+    width: 100%;
+    margin: 0 auto;
+}
+  }
